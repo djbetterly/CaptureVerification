@@ -193,43 +193,6 @@ The app also recognizes alternate folder names: **RAW**, **Captures**, **Export*
 
 ---
 
-## Building from Source
-
-```bash
-git clone https://github.com/djbetterly/CaptureVerification.git
-cd CaptureVerification
-open CaptureVerification.xcodeproj
-```
-
-Build with **⌘B** and run with **⌘R**. Requires Xcode 15+ and macOS 14 SDK.
-
----
-
-## Project Structure
-
-| File | Purpose |
-|------|---------|
-| `C1VerifyExportsApp.swift` | App entry point, scene configuration |
-| `ContentView.swift` | Main UI — history sidebar, welcome screen, verification flow |
-| `ExportVerifier.swift` | Core engine — folder scanning, file matching, naming detection |
-| `Models.swift` | Data models — `FolderResult`, `VerificationResult`, `NamingAnomaly` |
-| `ResultsView.swift` | Results display — folder tabs, stats, export buttons |
-| `ReportExporters.swift` | PDF generation — full and summary reports |
-| `ReportMetadata.swift` | Report metadata model |
-| `ReportMetadataSheet.swift` | Metadata input form |
-| `SessionHistoryManager.swift` | History persistence |
-| `VerificationArchive.swift` | XML archive for report regeneration |
-| `BackupVerification.swift` | Backup drive models and verification logic |
-| `BackupSelectionSheet.swift` | Backup drive selection UI |
-| `BackupResultsView.swift` | Backup results display |
-| `CompanySettings.swift` | Company branding model and storage |
-| `CompanySettingsView.swift` | Settings window UI |
-| `LicenseManager.swift` | Trial/license system |
-| `MenuBarManager.swift` | Menu bar integration |
-| `URLHandler.swift` | URL scheme handler (`captureverify://`) |
-
----
-
 ## Version History
 
 ### v2.0 — Current Release
