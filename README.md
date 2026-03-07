@@ -12,7 +12,7 @@ Capture Verification ensures every RAW capture has a matching export, every back
 
 ## Download
 
-**[⬇ Download Capture Verification v2.0 (DMG)](https://github.com/djbetterly/CaptureVerification/releases/latest)**
+**[⬇ Download Capture Verification (DMG)](https://github.com/djbetterly/CaptureVerification/releases/latest)**
 
 > Requires macOS 14.0 (Sonoma) or later. Universal binary — runs natively on Apple Silicon and Intel.
 
