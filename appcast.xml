@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Capture Verification Updates</title>
+        <link>https://raw.githubusercontent.com/djbetterly/CaptureVerification/main/appcast.xml</link>
+        <description>Most recent updates for Capture Verification</description>
+        <language>en</language>
+        
+        <item>
+            <title>Version 2.0</title>
+            <sparkle:version>2.0</sparkle:version>
+            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h2>What's New in 2.0</h2>
+                <ul>
+                    <li>Naming anomaly detection with expandable warnings</li>
+                    <li>Backup drive verification with file-level comparison</li>
+                    <li>Summary-only report option</li>
+                    <li>XML archive system for report regeneration</li>
+                    <li>Professional PDF reports with letterhead</li>
+                    <li>Company settings with logo support</li>
+                    <li>In-app feedback system</li>
+                </ul>
+            ]]></description>
+            <pubDate>Sat, 07 Mar 2026 12:00:00 -0500</pubDate>
+            <enclosure
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.0/CaptureVerification_v2.0.dmg"
+                length="0"
+                type="application/octet-stream"
+                sparkle:edSignature="SIGNATURE_HERE"
+            />
+        </item>
+        
+    </channel>
+</rss>
