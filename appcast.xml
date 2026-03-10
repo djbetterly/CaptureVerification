@@ -13,7 +13,16 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <h2>What's New in 2.1</h2>
-                <p>See release notes on GitHub for details.</p>
+                <ul>
+                    <li>Ratings and color tag scanning from Capture One session data</li>
+                    <li>Equipment tracking — camera models and lenses with masked serial numbers</li>
+                    <li>Report Customization toggles for cameras and lenses</li>
+                    <li>Smart metadata entry with recent value suggestions for Photographer and Client</li>
+                    <li>PDF report footer with app version and timestamp on every page</li>
+                    <li>In-app feedback system</li>
+                    <li>Auto-update support via Sparkle</li>
+                    <li>App notarized with Apple Developer ID</li>
+                </ul>
             ]]></description>
             <pubDate>Tue, 10 Mar 2026 06:52:50 -0400</pubDate>
             <enclosure
