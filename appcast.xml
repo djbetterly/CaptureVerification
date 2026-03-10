@@ -7,29 +7,20 @@
         <language>en</language>
         
         <item>
-            <title>Version 2.1</title>
-            <sparkle:version>2.1</sparkle:version>
-            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
+            <title>Version 2.1.2</title>
+            <sparkle:version>2.1.2</sparkle:version>
+            <sparkle:shortVersionString>2.1.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New in 2.1</h2>
-                <ul>
-                    <li>Ratings and color tag scanning from Capture One session data</li>
-                    <li>Equipment tracking — camera models and lenses with masked serial numbers</li>
-                    <li>Report Customization toggles for cameras and lenses</li>
-                    <li>Smart metadata entry with recent value suggestions for Photographer and Client</li>
-                    <li>PDF report footer with app version and timestamp on every page</li>
-                    <li>In-app feedback system</li>
-                    <li>Auto-update support via Sparkle</li>
-                    <li>App notarized with Apple Developer ID</li>
-                </ul>
+                <h2>What's New in 2.1.2</h2>
+                <p>See release notes on GitHub for details.</p>
             ]]></description>
-            <pubDate>Tue, 10 Mar 2026 06:52:50 -0400</pubDate>
+            <pubDate>Tue, 10 Mar 2026 07:17:11 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.1/Capture_Verification_Installer-v2.1.dmg"
-                length="3608721"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.1.2/Capture_Verification_Installer-v2.1.2.dmg"
+                length="3608796"
                 type="application/octet-stream"
-                sparkle:edSignature="6e66X+CabseDd56y98PknpVtH/Qz/Ci86J3DUFLBgmSXCVdYWahgCZo4pDFBmaw3v7QB2A4QWAzWlIeUFOXgBQ=="
+                sparkle:edSignature="P2Mm41tzmevM5VnlFoIkEr4H6SJsaLfCoVoU43JTglMoJF57XjDCFZH5t9T1A0CDcjNdixZvdFua0Xm66cAIBg=="
             />
         </item>
         
