@@ -7,20 +7,20 @@
         <language>en</language>
         
         <item>
-            <title>Version 2.0</title>
-            <sparkle:version>2.0</sparkle:version>
-            <sparkle:shortVersionString>2.0</sparkle:shortVersionString>
+            <title>Version 2.1</title>
+            <sparkle:version>2.1</sparkle:version>
+            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New in 2.0</h2>
+                <h2>What's New in 2.1</h2>
                 <p>See release notes on GitHub for details.</p>
             ]]></description>
-            <pubDate>Mon, 09 Mar 2026 21:46:45 -0400</pubDate>
+            <pubDate>Tue, 10 Mar 2026 06:52:50 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.0/Capture_Verification_Installer-v2.0.dmg"
-                length="3476485"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.1/Capture_Verification_Installer-v2.1.dmg"
+                length="3608721"
                 type="application/octet-stream"
-                sparkle:edSignature="jgB5pPHLzOkI362owTIQmrq4eWPEV4LRT8QF+i0g920vKtrDJO2fmikH8PyM21LoxH6HFfwBE2T1+xkEgAtuBg=="
+                sparkle:edSignature="6e66X+CabseDd56y98PknpVtH/Qz/Ci86J3DUFLBgmSXCVdYWahgCZo4pDFBmaw3v7QB2A4QWAzWlIeUFOXgBQ=="
             />
         </item>
         
