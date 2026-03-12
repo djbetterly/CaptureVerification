@@ -26,7 +26,7 @@ Capture Verification solves a critical problem in professional photography workf
 
 1. **Shoot** — Capture images in Capture One
 2. **Export** — Process and export to Output folder
-3. **Verify** — Drop the session folder into Capture Verification
+3. **Verify** — Drop the session folder into Capture Verification (or launch directly from Capture One)
 4. **Confirm** — Get an instant pass/fail with a professional PDF report
 
 ---
@@ -82,6 +82,34 @@ Automatically detects cameras and lenses used in each session from Capture One m
 - EQUIPMENT section in PDF reports
 - Toggleable in Report Customization — show or hide cameras and lenses independently
 
+### Select Thumbnails
+
+Preview images from your selects appear directly in the PDF report beneath each folder's details.
+
+- 3 thumbnail previews from color-tagged selects (default: Green)
+- Uses Capture One's cached `.cot` thumbnails — no RAW decoding, zero performance impact
+- Aspect-fit rendering with dark letterboxing for portrait images
+- Configurable color tag in Report Customization
+- Toggle on/off in Report Customization
+
+### Capture One Integration
+
+Launch verification directly from Capture One without switching apps.
+
+- **Scripts menu** — "Launch Capture Verification" auto-installed to Capture One's Scripts folder
+- Automatically loads the current open session and starts verification
+- Single-window architecture — no duplicate windows
+- URL scheme: `captureverification://verify?path=/path/to/session`
+
+### Menu Bar Quick Access
+
+Verify sessions without opening the full app window.
+
+- **Quick Verify...** (⌘⇧V) — Opens a folder picker directly from the menu bar
+- **Show Capture Verification** — Bring the main window to front
+- **Settings** — Quick access to Report Customization
+- App stays active in the menu bar even when the window is closed
+
 ### PDF Reports
 
 Professional, branded reports auto-saved to the session's Shoot Report folder.
@@ -92,6 +120,7 @@ Professional, branded reports auto-saved to the session's Shoot Report folder.
 - **Equipment** — Cameras and lenses used with masked serial numbers
 - **Key Metrics** — Captures, exports, match percentage, folder counts, total data size, naming warnings
 - **Ratings & Color Tags** — Star and color breakdown with colored indicators
+- **Select Thumbnails** — 3 preview images from color-tagged selects per folder
 - **Folder Inventory** — Every folder with capture counts and file types
 - **Detailed Results** — Per-folder breakdown with types (DNG, JPG), sizes, paths, missing files, naming warnings, and ratings
 - **Backup Verification** — Drive status, match percentage, missing/extra file lists
@@ -104,7 +133,7 @@ For when you just need the numbers without pass/fail judgment.
 
 - Toggle **"Generate summary-only report"** on the welcome screen before verification
 - Same letterhead and production details, but **no pass/fail badge**, no missing file lists, no warnings
-- Clean folder inventory with counts, types, sizes, and ratings
+- Clean folder inventory with counts, types, sizes, ratings, and thumbnails
 - Equipment and backup drive summary without match/mismatch status
 - Also available as **"Export Summary"** button on the results screen after any verification
 - Auto-saved as `SessionName_Summary_timestamp.pdf`
@@ -134,15 +163,16 @@ Brand your reports and control what's included.
 
 - Company name, logo, tech name, email, phone, website
 - Logo appears in the PDF letterhead alongside contact info
-- Tech Name and Email auto-populate the report metadata form
-- Toggle cameras and lenses on/off in reports
+- Toggle cameras, lenses, and select thumbnails on/off in reports
+- Configurable color tag for thumbnail selects
 - Accessible from **Settings** (⌘,)
 
 ### Smart Metadata Entry
 
-The Photographer and Client fields remember previously used values.
+The Photographer and Client fields remember previously used values. Tech name and email have independent defaults.
 
-- Dropdown suggestions from past entries — type to filter or click the arrow to browse
+- **Set as Default** button for tech name and email — persists across sessions, independent from Company Settings
+- Dropdown suggestions for Photographer and Client from past entries — type to filter or click the arrow to browse
 - Remove individual entries from the list
 - Up to 20 recent values per field, most recent first
 - Values saved automatically after each verification
@@ -208,6 +238,20 @@ The app also recognizes alternate folder names: **RAW**, **Captures**, **Export*
 5. Click through the backup drive selection (skip if no backups to verify)
 6. View results — the PDF report is auto-saved to `Shoot Report/reports/`
 
+### From Capture One
+
+1. Open a session in Capture One
+2. Go to **Scripts menu → Launch Capture Verification**
+3. The app launches with the session pre-loaded
+4. Click through backup selection and verify
+
+### From the Menu Bar
+
+1. Click the Capture Verification icon in the menu bar
+2. Select **Quick Verify...** (⌘⇧V)
+3. Choose a session folder
+4. Verification starts automatically
+
 ### With Backup Verification
 
 1. Connect your backup drive(s)
@@ -243,7 +287,18 @@ The app also recognizes alternate folder names: **RAW**, **Captures**, **Export*
 
 ## Version History
 
-### v2.1 — Current Release
+### v2.2 — Current Release
+
+- Select thumbnails in PDF reports — 3 preview images from color-tagged selects per folder
+- Configurable thumbnail color tag and toggle in Report Customization
+- Capture One script integration — launch verification directly from Capture One's Scripts menu
+- Menu bar Quick Verify (⌘⇧V) — folder picker from the menu bar
+- Independent tech name/email defaults with "Set as Default" button
+- Single-window architecture — no duplicate windows from URL scheme or script launches
+- Removed App Sandbox for cleaner Developer ID distribution
+- Fixed Sparkle version detection
+
+### v2.1
 
 - Ratings and color tag scanning from Capture One `.cos` files
 - Equipment tracking — camera models and lenses with masked serial numbers
