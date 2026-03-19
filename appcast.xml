@@ -5,45 +5,28 @@
         <link>https://raw.githubusercontent.com/djbetterly/CaptureVerification/main/appcast.xml</link>
         <description>Most recent updates for Capture Verification</description>
         <language>en</language>
-
+        
         <item>
-            <title>Version 2.3.2026.03.19</title>
+            <title>Version 2.4</title>
             <sparkle:version>2026.03.19</sparkle:version>
-            <sparkle:shortVersionString>2.3.2026.03.19</sparkle:shortVersionString>
+            <sparkle:shortVersionString>2.4</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description><![CDATA[
-                <style>
-                    body { font-family: -apple-system, sans-serif; font-size: 13px; padding: 8px; }
-                    h2 { font-size: 16px; margin-bottom: 4px; }
-                    h3 { font-size: 13px; margin: 12px 0 4px 0; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
-                    ul { margin: 4px 0 8px 0; padding-left: 18px; }
-                    li { margin-bottom: 4px; }
-                </style>
-
-                <h2>What's New in 2.3.2026.03.19</h2>
-
-                <h3>Improvements</h3>
-                <ul>
-                    <li><strong>Shoot reports restored</strong> — equipment, ratings, color tags, file sizes, and select thumbnails are back in PDF reports after a regression in 2.2.</li>
-                    <li><strong>Folder exclusion redesigned</strong> — excluded folders are now chosen via a folder picker scoped to your session, replacing the unreliable auto-scan. Excluded folders appear as orange "⊘ not scanned" entries in the PDF report.</li>
-                    <li><strong>Verification Options sheet</strong> — folder exclusion and backup verification are now clearly organized in one pre-flight sheet.</li>
-                </ul>
-
-                <h3>Bug Fixes</h3>
-                <ul>
-                    <li>Fixed Sparkle auto-update incorrectly reporting "You're up to date" when a newer version was available.</li>
-                    <li>Fixed the release script to correctly separate sparkle:version (build number) from sparkle:shortVersionString (display version).</li>
-                    <li>Fixed cameras, lenses, ratings summaries, and thumbnails being missing from auto-generated shoot reports.</li>
-                </ul>
-            ]]></description>
-            <pubDate>Thu, 19 Mar 2026 04:00:00 -0400</pubDate>
+            <description>
+              <![CDATA[
+                <b>New in v2.3</b><br><br>
+                <b>Select thumbnails in reports</b> — green-tagged selects from Capture One now appear as image previews in your PDF shoot report.<br><br>
+                <b>Folder exclusion</b> — exclude specific folders before running verification via the new Verification Options sheet.<br><br>
+                <b>Improved report layout</b> — two-column folder rows with proper page break handling.
+              ]]>
+            </description>
+            <pubDate>Thu, 19 Mar 2026 17:43:44 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.3.2026.03.19/Capture_Verification_Installer-v2.3.2026.03.19.dmg"
-                length="REPLACE_WITH_LENGTH"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.4.2026.03.19/Capture_Verification_Installer-v2.4.2026.03.19.dmg"
+                length="3590635"
                 type="application/octet-stream"
-                sparkle:edSignature="REPLACE_WITH_SIGNATURE"
+                sparkle:edSignature="XOdB2XqDhgdTpqfzHvvkKUBpl1Nk+rJixxSSsuIKMso1zZWK3BmtBbFGtVDhtsSHnq5Nn8GF1ngtwlpq7zh7BQ=="
             />
         </item>
-
+        
     </channel>
 </rss>
