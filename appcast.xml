@@ -8,19 +8,19 @@
         
         <item>
             <title>Version 2.3</title>
-            <sparkle:version>2026.03.18</sparkle:version>
+            <sparkle:version>2026.03.19</sparkle:version>
             <sparkle:shortVersionString>2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <h2>What's New in 2.3</h2>
                 <p>See release notes on GitHub for details.</p>
             ]]></description>
-            <pubDate>Thu, 19 Mar 2026 05:15:43 -0400</pubDate>
+            <pubDate>Thu, 19 Mar 2026 06:51:35 -0400</pubDate>
             <enclosure
                 url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.3.2026.03.19/Capture_Verification_Installer-v2.3.2026.03.19.dmg"
-                length="3588867"
+                length="3588864"
                 type="application/octet-stream"
-                sparkle:edSignature="9YUedjNwk5XPfke14bKRL8+o3p/iU3B61zr7qWPqegn8vOw+dCrDWBAHuMFWPo3jhuM2B9Fi09kBlpklDzUrDA=="
+                sparkle:edSignature="ooOguSRA6eY3z5TEplyE488+E2jVNYcrxArOUlpA1SlQhuMkrf3A45euj7P2WtdEK2zQ2tRvd5qowwQLe6+sAw=="
             />
         </item>
         
