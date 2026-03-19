@@ -8,7 +8,7 @@
         
         <item>
             <title>Version 2.5</title>
-            <sparkle:version>2026.03.19</sparkle:version>
+            <sparkle:version>2026.03.20</sparkle:version>
             <sparkle:shortVersionString>2.5</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description>
@@ -19,12 +19,12 @@
                 <b>Improved report layout</b> — two-column folder rows with proper page break handling.
               ]]>
             </description>
-            <pubDate>Thu, 19 Mar 2026 18:22:54 -0400</pubDate>
+            <pubDate>Thu, 19 Mar 2026 18:28:42 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.5.2026.03.19/Capture_Verification_Installer-v2.5.2026.03.19.dmg"
-                length="3588545"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.5.2026.03.20/Capture_Verification_Installer-v2.5.2026.03.20.dmg"
+                length="3588605"
                 type="application/octet-stream"
-                sparkle:edSignature="f/AiaP29z4dkRDszVHOk/23Gq6FssFTS83U8qFIImaVOVu4KeVbq2Au/dIl1SZz6OlPbGT6J3PE6XUeUCoSVCA=="
+                sparkle:edSignature="+jU5S/r0uBTa8TJn3U+FSX6lK4Hw21hLZ4ZIOaSwXWw5sYxQi5ttD81WqC/9ri9fhkQNJWVFQtw01yquWo2RAg=="
             />
         </item>
         
