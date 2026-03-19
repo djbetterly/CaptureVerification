@@ -19,12 +19,12 @@
                 <b>Improved report layout</b> — two-column folder rows with proper page break handling.
               ]]>
             </description>
-            <pubDate>Thu, 19 Mar 2026 18:15:02 -0400</pubDate>
+            <pubDate>Thu, 19 Mar 2026 18:22:54 -0400</pubDate>
             <enclosure
                 url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.5.2026.03.19/Capture_Verification_Installer-v2.5.2026.03.19.dmg"
-                length="3588550"
+                length="3588545"
                 type="application/octet-stream"
-                sparkle:edSignature="Ljy/gGUupEDZ5rBkgj84GTXAzmMuuXuNCaFlEt8AxQ7ug7Re8GnZ+3qQr9yVi1zyMqhCbmjgWV10ZHRdoNUqBg=="
+                sparkle:edSignature="f/AiaP29z4dkRDszVHOk/23Gq6FssFTS83U8qFIImaVOVu4KeVbq2Au/dIl1SZz6OlPbGT6J3PE6XUeUCoSVCA=="
             />
         </item>
         
