@@ -7,24 +7,24 @@
         <language>en</language>
         
         <item>
-            <title>Version 2.4</title>
-            <sparkle:version>2026.03.19</sparkle:version>
-            <sparkle:shortVersionString>2.4</sparkle:shortVersionString>
+            <title>Version 2.3</title>
+            <sparkle:version>2026.03.19-2</sparkle:version>
+            <sparkle:shortVersionString>2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description>
               <![CDATA[
-                <b>New in v2.4</b><br><br>
+                <b>New in v2.3</b><br><br>
                 <b>Select thumbnails in reports</b> — green-tagged selects from Capture One now appear as image previews in your PDF shoot report.<br><br>
                 <b>Folder exclusion</b> — exclude specific folders before running verification via the new Verification Options sheet.<br><br>
                 <b>Improved report layout</b> — two-column folder rows with proper page break handling.
               ]]>
             </description>
-            <pubDate>Thu, 19 Mar 2026 17:43:44 -0400</pubDate>
+            <pubDate>Thu, 19 Mar 2026 18:04:24 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.4.2026.03.19/Capture_Verification_Installer-v2.4.2026.03.19.dmg"
-                length="3590635"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.3.2026.03.19-2/Capture_Verification_Installer-v2.3.2026.03.19-2.dmg"
+                length="3588560"
                 type="application/octet-stream"
-                sparkle:edSignature="XOdB2XqDhgdTpqfzHvvkKUBpl1Nk+rJixxSSsuIKMso1zZWK3BmtBbFGtVDhtsSHnq5Nn8GF1ngtwlpq7zh7BQ=="
+                sparkle:edSignature="98EX/dGHfIHmtzGNd1T95d1ZxGpPelppH3CcqYxN8dFObcfZdyU0apOX+cRfk7zfSPCOiXRSLg51hTh01UbLAg=="
             />
         </item>
         
