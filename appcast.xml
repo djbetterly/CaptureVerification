@@ -7,20 +7,20 @@
         <language>en</language>
         
         <item>
-            <title>Version 2.2.2026.03.12</title>
-            <sparkle:version>2.2.2026.03.12</sparkle:version>
-            <sparkle:shortVersionString>2.2.2026.03.12</sparkle:shortVersionString>
+            <title>Version 2.2.2026.03.18</title>
+            <sparkle:version>2.2.2026.03.18</sparkle:version>
+            <sparkle:shortVersionString>2.2.2026.03.18</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New in 2.2.2026.03.12</h2>
+                <h2>What's New in 2.2.2026.03.18</h2>
                 <p>See release notes on GitHub for details.</p>
             ]]></description>
-            <pubDate>Thu, 12 Mar 2026 14:18:46 -0400</pubDate>
+            <pubDate>Wed, 18 Mar 2026 23:18:10 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.2.2026.03.12/Capture_Verification_Installer-v2.2.2026.03.12.dmg"
-                length="3525351"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.2.2026.03.18/Capture_Verification_Installer-v2.2.2026.03.18.dmg"
+                length="3492877"
                 type="application/octet-stream"
-                sparkle:edSignature="WhJO8wt6LDVui5csE6JoOs9QS8etML9TzkF8s7uyI74J9CQ/FEddgIhHva1yY9uwDxUIp13L9jxlJrh1rVhgCw=="
+                sparkle:edSignature="K9UdOGrz7w+8dxQcV9jzkYZkNhNI5GJNmBL//x2rYGqrochgod6DToXD+yj8LsUs2pqfEsIxvhxDndok2jdwCA=="
             />
         </item>
         
