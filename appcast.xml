@@ -7,40 +7,20 @@
         <language>en</language>
         
         <item>
-            <title>Version 2.2.2026.03.18</title>
+            <title>Version 2.3</title>
             <sparkle:version>2026.03.18</sparkle:version>
-            <sparkle:shortVersionString>2.2.2026.03.18</sparkle:shortVersionString>
+            <sparkle:shortVersionString>2.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <style>
-                    body { font-family: -apple-system, sans-serif; font-size: 13px; padding: 8px; }
-                    h2 { font-size: 16px; margin-bottom: 4px; }
-                    h3 { font-size: 13px; margin: 12px 0 4px 0; color: #555; text-transform: uppercase; letter-spacing: 0.5px; }
-                    ul { margin: 4px 0 8px 0; padding-left: 18px; }
-                    li { margin-bottom: 4px; }
-                </style>
-
-                <h2>What's New in 2.2.2026.03.18</h2>
-
-                <h3>Improvements</h3>
-                <ul>
-                    <li><strong>Verification Options sheet</strong> — the pre-verification workflow is now clearly organized into a single sheet with two sections: Exclude Folders and Backup Verification.</li>
-                    <li><strong>Folder Exclusion</strong> — choose specific folders to skip during verification using a folder picker scoped to your session. Supports multi-select. Excluded folders appear as removable chips before you run.</li>
-                    <li><strong>Clearer UI</strong> — the sheet previously labeled "Backup Verification" has been renamed "Verification Options" to better reflect its purpose.</li>
-                </ul>
-
-                <h3>Bug Fixes</h3>
-                <ul>
-                    <li>Fixed a build error caused by model fields added in 2.1 not being passed through all initializer call sites.</li>
-                    <li>Fixed a Swift compiler timeout in Report Options caused by an overly complex view body.</li>
-                </ul>
+                <h2>What's New in 2.3</h2>
+                <p>See release notes on GitHub for details.</p>
             ]]></description>
-            <pubDate>Wed, 18 Mar 2026 23:18:10 -0400</pubDate>
+            <pubDate>Thu, 19 Mar 2026 05:04:56 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.2.2026.03.18/Capture_Verification_Installer-v2.2.2026.03.18.dmg"
-                length="3492877"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.3.2026_03_19/Capture_Verification_Installer-v2.3.2026_03_19.dmg"
+                length="3588843"
                 type="application/octet-stream"
-                sparkle:edSignature="K9UdOGrz7w+8dxQcV9jzkYZkNhNI5GJNmBL//x2rYGqrochgod6DToXD+yj8LsUs2pqfEsIxvhxDndok2jdwCA=="
+                sparkle:edSignature="GtgHZcCH9QoyixfUB77IRWrjzLApI3KXUZyIvs7v9Njpssm+IIpqgDPl7RARXcTkRAR/0bR2j4Qv5DSHx8CkDw=="
             />
         </item>
         
