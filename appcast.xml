@@ -13,7 +13,7 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description>
               <![CDATA[
-                <b>New in v2.3</b><br><br>
+                <b>New in v2.4</b><br><br>
                 <b>Select thumbnails in reports</b> — green-tagged selects from Capture One now appear as image previews in your PDF shoot report.<br><br>
                 <b>Folder exclusion</b> — exclude specific folders before running verification via the new Verification Options sheet.<br><br>
                 <b>Improved report layout</b> — two-column folder rows with proper page break handling.
