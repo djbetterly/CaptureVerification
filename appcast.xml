@@ -7,24 +7,25 @@
         <language>en</language>
         
         <item>
-            <title>Version 2.5</title>
+            <title>Version 3.0</title>
             <sparkle:version>2026.03.20</sparkle:version>
-            <sparkle:shortVersionString>2.5</sparkle:shortVersionString>
+            <sparkle:shortVersionString>3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description>
-              <![CDATA[
-                <b>New in v2.5</b><br><br>
-                <b>Select thumbnails in reports</b> — green-tagged selects from Capture One now appear as image previews in your PDF shoot report.<br><br>
-                <b>Folder exclusion</b> — exclude specific folders before running verification via the new Verification Options sheet.<br><br>
-                <b>Improved report layout</b> — two-column folder rows with proper page break handling.
-              ]]>
-            </description>
-            <pubDate>Thu, 19 Mar 2026 18:28:42 -0400</pubDate>
+            <description><![CDATA[
+            <h2>What's New</h2>
+            <ul>
+              <li><strong>Multi-Drive Backup Workflow:</strong> Can't connect all your backup drives at once? Now you can verify them in batches. Set how many total drives you expect, verify the ones connected now, swap drives, and re-verify — all results are remembered and included in the final report.</li>
+              <li><strong>Verify Remaining Drives:</strong> A prompt appears on the results window showing how many drives still need verification, with a dedicated sheet to add and verify additional drives without re-running the full session scan.</li>
+              <li><strong>Stale Cache Detection:</strong> If the master session changes between verification batches, previously verified drives are flagged as stale so you know which ones need to be re-verified.</li>
+              <li><strong>Open Report Button:</strong> Quickly open your generated PDF report directly from the results window.</li>
+            </ul>
+            ]]></description>
+            <pubDate>Mon, 23 Mar 2026 09:41:28 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v2.5.2026.03.20/Capture_Verification_Installer-v2.5.2026.03.20.dmg"
-                length="3588605"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.0.2026.03.23/Capture_Verification_Installer-v3.0.2026.03.23.dmg"
+                length="3784457"
                 type="application/octet-stream"
-                sparkle:edSignature="+jU5S/r0uBTa8TJn3U+FSX6lK4Hw21hLZ4ZIOaSwXWw5sYxQi5ttD81WqC/9ri9fhkQNJWVFQtw01yquWo2RAg=="
+                sparkle:edSignature="dw5E0UlJgsPODsG0x2th8IbBPvuyXSAw16WcbkYvCXJW/Xhc8o19DmilwIE6PRVpYvm9U+Hwnm8KFE69rRvXDA=="
             />
         </item>
         
