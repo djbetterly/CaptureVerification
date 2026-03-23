@@ -20,12 +20,12 @@
               <li><strong>Open Report Button:</strong> Quickly open your generated PDF report directly from the results window.</li>
             </ul>
             ]]></description>
-            <pubDate>Mon, 23 Mar 2026 10:00:58 -0400</pubDate>
+            <pubDate>Mon, 23 Mar 2026 10:04:09 -0400</pubDate>
             <enclosure
                 url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.0/Capture_Verification_Installer-v3.0.dmg"
-                length="3784342"
+                length="3784355"
                 type="application/octet-stream"
-                sparkle:edSignature="e546MVpHYv/LD2tBoDiUlUuKb8dXx2bQd8Psk9ps/1k218NerKTK3E1ia6Yk2YQxNniKTDzDrYn+B2UbuMQYBQ=="
+                sparkle:edSignature="mIb62nx3fb9p/uABfB04mCULfwBzUEp7VCbX4+276scYwqesRTCWw5mJ9pIKqcTJzx7LmjuPi77Hd2WB3bouDA=="
             />
         </item>
         
