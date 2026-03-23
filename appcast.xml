@@ -8,7 +8,7 @@
         
         <item>
             <title>Version 3.0</title>
-            <sparkle:version>3.0</sparkle:version>
+            <sparkle:version>2026.03.20</sparkle:version>
             <sparkle:shortVersionString>3.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
@@ -20,12 +20,12 @@
               <li><strong>Open Report Button:</strong> Quickly open your generated PDF report directly from the results window.</li>
             </ul>
             ]]></description>
-            <pubDate>Mon, 23 Mar 2026 10:04:09 -0400</pubDate>
+            <pubDate>Mon, 23 Mar 2026 10:07:07 -0400</pubDate>
             <enclosure
                 url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.0/Capture_Verification_Installer-v3.0.dmg"
-                length="3784355"
+                length="3784347"
                 type="application/octet-stream"
-                sparkle:edSignature="mIb62nx3fb9p/uABfB04mCULfwBzUEp7VCbX4+276scYwqesRTCWw5mJ9pIKqcTJzx7LmjuPi77Hd2WB3bouDA=="
+                sparkle:edSignature="cJvUlEI7Ud9S5ux/zdD7c2U5PKDGQEPTCYpfm5zhhGXUFtrs2zxUSCo2nzX0FwJAUy9K0vXC7auruHs0nISICw=="
             />
         </item>
         
