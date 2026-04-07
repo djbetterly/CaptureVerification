@@ -7,24 +7,24 @@
         <language>en</language>
         
         <item>
-            <title>Version 3.1.2026.04.06</title>
-            <sparkle:version>2026.04.06</sparkle:version>
-            <sparkle:shortVersionString>3.1.2026.04.06</sparkle:shortVersionString>
+            <title>Version 3.1.20260406</title>
+            <sparkle:version>20260406</sparkle:version>
+            <sparkle:shortVersionString>3.1.20260406</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                <h2>What's New in 3.1.2026.04.06</h2>
+                <h2>What's New in 3.1.20260406</h2>
                 <ul>
                     <li><strong>Capture One Variant Detection</strong> — Automatically detects variants by analyzing .cos files during scan. Choose to rename (_Variant-01), move to a Variants folder, or leave as-is. Variants are excluded from naming warnings and count mismatches, and itemized in the report.</li>
                     <li><strong>Improved Report Layout</strong> — Passed folders now render correctly under their header, with variant details included per folder.</li>
                     <li><strong>Backup Cache Fix</strong> — Cached backup results no longer appear in reports when no backup drives are selected.</li>
                 </ul>
             ]]></description>
-            <pubDate>Mon, 06 Apr 2026 22:54:35 -0400</pubDate>
+            <pubDate>Mon, 06 Apr 2026 23:04:15 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.1.2026.04.06/Capture_Verification_Installer-v3.1.2026.04.06.dmg"
-                length="3853868"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.1.20260406/Capture_Verification_Installer-v3.1.20260406.dmg"
+                length="3853871"
                 type="application/octet-stream"
-                sparkle:edSignature="e93hmoG1lHV4+PMcMcQCjkTpT6dUGu1IVT9i8oJO+fwNy2X9Z3bwR4GZZ0Ok/nv2MpEWGmQuUg2hRtce2lbIDg=="
+                sparkle:edSignature="zPNNdmmj34Z21TRN4XSSbTBE0gHJm4UhnLjJ3Kuv5ocRvmpIICSuUli6HPhV/u9NXcgQai1oMlD8Si7DqRIlDA=="
             />
         </item>
         
