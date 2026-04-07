@@ -7,25 +7,24 @@
         <language>en</language>
         
         <item>
-            <title>Version 3.0</title>
-            <sparkle:version>20260323</sparkle:version>
-            <sparkle:shortVersionString>3.0</sparkle:shortVersionString>
+            <title>Version 3.1.2026.04.06</title>
+            <sparkle:version>2026.04.06</sparkle:version>
+            <sparkle:shortVersionString>3.1.2026.04.06</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-            <h2>What's New</h2>
-            <ul>
-              <li><strong>Multi-Drive Backup Workflow:</strong> Can't connect all your backup drives at once? Now you can verify them in batches. Set how many total drives you expect, verify the ones connected now, swap drives, and re-verify — all results are remembered and included in the final report.</li>
-              <li><strong>Verify Remaining Drives:</strong> A prompt appears on the results window showing how many drives still need verification, with a dedicated sheet to add and verify additional drives without re-running the full session scan.</li>
-              <li><strong>Stale Cache Detection:</strong> If the master session changes between verification batches, previously verified drives are flagged as stale so you know which ones need to be re-verified.</li>
-              <li><strong>Open Report Button:</strong> Quickly open your generated PDF report directly from the results window.</li>
-            </ul>
+                <h2>What's New in 3.1.2026.04.06</h2>
+                <ul>
+                    <li><strong>Capture One Variant Detection</strong> — Automatically detects variants by analyzing .cos files during scan. Choose to rename (_Variant-01), move to a Variants folder, or leave as-is. Variants are excluded from naming warnings and count mismatches, and itemized in the report.</li>
+                    <li><strong>Improved Report Layout</strong> — Passed folders now render correctly under their header, with variant details included per folder.</li>
+                    <li><strong>Backup Cache Fix</strong> — Cached backup results no longer appear in reports when no backup drives are selected.</li>
+                </ul>
             ]]></description>
-            <pubDate>Mon, 23 Mar 2026 10:13:59 -0400</pubDate>
+            <pubDate>Mon, 06 Apr 2026 22:54:35 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.0/Capture_Verification_Installer-v3.0.dmg"
-                length="3784349"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.1.2026.04.06/Capture_Verification_Installer-v3.1.2026.04.06.dmg"
+                length="3853868"
                 type="application/octet-stream"
-                sparkle:edSignature="zQN5xLgTBJuhmkmqLp/0mUsYQ3CgfVWRgZGtban5N2+AwSQrUTC/lsQjtPQxNtWSSHGg/5TtqZMRSqjoku5bDA=="
+                sparkle:edSignature="e93hmoG1lHV4+PMcMcQCjkTpT6dUGu1IVT9i8oJO+fwNy2X9Z3bwR4GZZ0Ok/nv2MpEWGmQuUg2hRtce2lbIDg=="
             />
         </item>
         
