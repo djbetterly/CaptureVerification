@@ -7,65 +7,29 @@
         <language>en</language>
         
         <item>
-            <title>Version 3.2.20260419</title>
-            <sparkle:version>20260419</sparkle:version>
-            <sparkle:shortVersionString>3.2.20260419</sparkle:shortVersionString>
+            <title>Version 3.2.20260424</title>
+            <sparkle:version>20260424</sparkle:version>
+            <sparkle:shortVersionString>3.2.20260424</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                            <h2>What's New in 3.2</h2>
-                            
-                            <h3>🔗 Capture One Integration</h3>
+                            <h2>What's New in 3.2.20260424</h2>
                             <ul>
-                                <li><strong>Process missing files directly</strong> — click "Process in C1" on any missing file to send it to Capture One's batch queue</li>
-                                <li><strong>Recipe picker</strong> — select from your available process recipes; choice persists for the session</li>
-                                <li><strong>Process All in C1</strong> — batch-process all missing files in a folder with one click</li>
-                                <li><strong>Re-check button</strong> — lightweight verification of just the missing files after processing, no full re-scan needed</li>
-                            </ul>
-                            
-                            <h3>📂 Subfolder Context</h3>
-                            <ul>
-                                <li>Missing files in View/Resolve are now grouped by subfolder</li>
-                                <li>Subfolder rows show missing file counts (e.g., "Captures: 252 · Output: 251 · 1 missing")</li>
-                                <li>Show in Finder navigates to the correct subfolder</li>
-                                <li>Subfolder status updates live when files are resolved</li>
-                            </ul>
-                            
-                            <h3>⚠️ Naming Anomaly Improvements</h3>
-                            <ul>
-                                <li>Fixed false positives — pattern detection now runs per-subfolder</li>
-                                <li>Warnings now show expected vs actual naming prefix</li>
-                                <li>Show in Finder button added next to each warning</li>
-                                <li>Warnings grouped by subfolder</li>
-                            </ul>
-                            
-                            <h3>🐞 Diagnostic Logging</h3>
-                            <ul>
-                                <li>New diagnostic logging for debugging OS-specific issues (e.g., macOS Tahoe)</li>
-                                <li>Enable in Settings → Advanced</li>
-                                <li>File access errors tracked and surfaced in results header</li>
-                                <li>Export logs from the results screen</li>
-                            </ul>
-                            
-                            <h3>📄 PDF Reports</h3>
-                            <ul>
-                                <li>Missing files listed individually with subfolder grouping</li>
-                                <li>Subfolder breakdown in folder sections</li>
-                                <li>macOS version in report header</li>
-                            </ul>
-                            
-                            <h3>Other</h3>
-                            <ul>
-                                <li>macOS version displayed in results header</li>
-                                <li>Summary cards update live when issues are resolved</li>
-                                <li>Improved file enumeration error handling</li>
+                                <li><strong>Output Root Fallback:</strong> Sessions where processed files sit directly in Output/ (no matching subfolder) are now detected correctly.</li>
+                                <li><strong>Quarantine for Extra Files:</strong> Extra output and RAW files can now be moved to Trash/quarantine/ individually or in bulk, with live status updates.</li>
+                                <li><strong>Re-Verify Button:</strong> Re-run verification from the results window without returning to the session picker. Results refresh in place.</li>
+                                <li><strong>Missing Variant Detection:</strong> Images with Capture One variants defined in COS but not yet processed are now flagged as failures instead of passing silently.</li>
+                                <li><strong>Variant Reprocessing:</strong> "Reprocess All Variants" moves existing output aside before sending to C1, preventing collision duplicates.</li>
+                                <li><strong>Orphaned COS Filtering:</strong> Sidecar files for images no longer in the session are ignored during variant detection.</li>
+                                <li><strong>C1 Background Processing:</strong> Capture One no longer steals focus when processing files from Capture Verification.</li>
+                                <li><strong>Auto Re-Verify on Done:</strong> Closing the View/Resolve sheet automatically triggers a fresh verification pass.</li>
                             </ul>
                         ]]></description>
-            <pubDate>Sun, 19 Apr 2026 11:30:01 -0400</pubDate>
+            <pubDate>Fri, 24 Apr 2026 17:18:30 -0700</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.2.20260419/Capture_Verification_Installer-v3.2.20260419.dmg"
-                length="3969868"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.2.20260424/Capture_Verification_Installer-v3.2.20260424.dmg"
+                length="4026632"
                 type="application/octet-stream"
-                sparkle:edSignature="Zgid1cQ/zHjs19siWUVZydfhvOjfyVpj1hM51aNQr9a2U6BFo0GMwe0QMa7B+LAewQOIE62g8vtemrjQ4M42Aw=="
+                sparkle:edSignature="XYXvWRaF9ZE5/TDLESSqOsY48bxM0otTvcXtWzycr9hgcaCDcRd+70NI1Sh9OVBg6P6QKsmxmvOeheYVMu2RBw=="
             />
         </item>
         
