@@ -7,29 +7,35 @@
         <language>en</language>
         
         <item>
-            <title>Version 3.3.20260424</title>
-            <sparkle:version>20260424</sparkle:version>
-            <sparkle:shortVersionString>3.3.20260424</sparkle:shortVersionString>
+            <title>Version 3.4.20260427</title>
+            <sparkle:version>20260427</sparkle:version>
+            <sparkle:shortVersionString>3.4.20260427</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-                            <h2>What's New in 3.3.20260424</h2>
+                            <h2>What's New in 3.4.20260427</h2>
                             <ul>
                                 <li><strong>Output Root Fallback:</strong> Sessions where processed files sit directly in Output/ (no matching subfolder) are now detected correctly.</li>
-                                <li><strong>Quarantine for Extra Files:</strong> Extra output and RAW files can now be moved to Trash/quarantine/ individually or in bulk, with live status updates.</li>
+                                <li><strong>C1 Suffix Matching:</strong> Output subfolders with Capture One numeric suffixes (e.g., Beach_North_02) now match their capture counterparts automatically.</li>
+                                <li><strong>Quarantine for Extra Files:</strong> Extra output and RAW files can be moved to Trash/quarantine/ individually or in bulk, with live status updates.</li>
                                 <li><strong>Re-Verify Button:</strong> Re-run verification from the results window without returning to the session picker. Results refresh in place.</li>
-                                <li><strong>Missing Variant Detection:</strong> Images with Capture One variants defined in COS but not yet processed are now flagged as failures instead of passing silently.</li>
-                                <li><strong>Variant Reprocessing:</strong> "Reprocess All Variants" moves existing output aside before sending to C1, preventing collision duplicates.</li>
-                                <li><strong>Orphaned COS Filtering:</strong> Sidecar files for images no longer in the session are ignored during variant detection.</li>
-                                <li><strong>C1 Background Processing:</strong> Capture One no longer steals focus when processing files from Capture Verification.</li>
                                 <li><strong>Auto Re-Verify on Done:</strong> Closing the View/Resolve sheet automatically triggers a fresh verification pass.</li>
+                                <li><strong>Missing Variant Detection:</strong> Images with Capture One variants defined in COS but not yet processed are now flagged as failures with a dedicated section and reprocessing buttons.</li>
+                                <li><strong>Variant Reprocessing:</strong> "Reprocess All Variants" moves existing output aside before sending to C1, preventing collision duplicates.</li>
+                                <li><strong>Variant Sheet on Re-Verify:</strong> The variant rename action sheet now triggers correctly after re-verify detects new variants.</li>
+                                <li><strong>Orphaned COS Filtering:</strong> Sidecar files for images no longer in the session are ignored during variant detection.</li>
+                                <li><strong>Deep CaptureOne Scanning:</strong> Camera, lens, rating, and variant data is now discovered from CaptureOne folders at any depth in the session hierarchy.</li>
+                                <li><strong>C1 Background Processing:</strong> Capture One no longer steals focus when processing files from Capture Verification.</li>
+                                <li><strong>PDF Report Improvements:</strong> Subfolder breakdowns visible under each folder, equipment always included, PASSED FOLDERS header stays on same page as first folder, FAILED FOLDERS moved to end of report, fixed invisible text and divider wrapping.</li>
+                                <li><strong>Capture One Version in Report:</strong> The shoot report now includes the Capture One version alongside the macOS version.</li>
+                                <li><strong>Scan Performance:</strong> Eliminated beachball during large session scans with UI yield points and optimized directory-only CaptureOne folder search.</li>
                             </ul>
                         ]]></description>
-            <pubDate>Fri, 24 Apr 2026 17:21:56 -0700</pubDate>
+            <pubDate>Mon, 27 Apr 2026 20:07:32 -0700</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.3.20260424/Capture_Verification_Installer-v3.3.20260424.dmg"
-                length="4026690"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.4.20260427/Capture_Verification_Installer-v3.4.20260427.dmg"
+                length="4038206"
                 type="application/octet-stream"
-                sparkle:edSignature="Qh088jTteJCVQ430NY242EJKkEB/TS19u6gteWkToU5x3v8k4+gIhZ5vdla1sNI3cbDbiZm28yax1hcugEb3Cw=="
+                sparkle:edSignature="8DYArK+6k+8ejqgZWrz3d3hzs92x9PuHmFbn4CMmUZWfJel69FBvz5tFVUwDldmJFItnajExsSJnpl6ZmgtjDA=="
             />
         </item>
         
