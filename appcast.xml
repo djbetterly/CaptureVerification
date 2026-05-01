@@ -13,14 +13,14 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
                 <h2>What's New in 3.5.20260430</h2>
-                <p>Misc Bug Fixes</p>
+                <p>See release notes on GitHub for details.</p>
             ]]></description>
-            <pubDate>Thu, 30 Apr 2026 22:10:07 -0400</pubDate>
+            <pubDate>Thu, 30 Apr 2026 22:36:48 -0400</pubDate>
             <enclosure
                 url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.5.20260430/Capture_Verification_Installer-v3.5.20260430.dmg"
-                length="4049233"
+                length="4053661"
                 type="application/octet-stream"
-                sparkle:edSignature="AaCRsSYY2RWsvouOnsQIFuL9B0HdEj6TPFI3mXlu/OsJK03bE6rFUvSJfs1ZEFCiq3hH5Cam90owumWrClQHDw=="
+                sparkle:edSignature="Xk1YeLwwOMqASYsNzLabyLwAUB4PMGZk25rZe30T7aobnsHsK264A4D37bvINIJh9wUIfDdBLxY9/6f54CQ2CA=="
             />
         </item>
         
