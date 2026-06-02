@@ -8,7 +8,7 @@
         
         <item>
             <title>Version 3.6</title>
-            <sparkle:version>20260430</sparkle:version>
+            <sparkle:version>20260601</sparkle:version>
             <sparkle:shortVersionString>3.6</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
@@ -20,12 +20,12 @@
                     <li>Updated trial expiration date</li>
                 </ul>
             ]]></description>
-            <pubDate>Tue, 02 Jun 2026 19:48:58 -0400</pubDate>
+            <pubDate>Tue, 02 Jun 2026 19:57:59 -0400</pubDate>
             <enclosure
                 url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.6/Capture_Verification_Installer-v3.6.dmg"
-                length="4102400"
+                length="4100542"
                 type="application/octet-stream"
-                sparkle:edSignature="AYlXAc/EG9kUbz3KSb1rD+Ac7VxxSKBraGnEu+V3s0h8JE5qAs/uQ5zwN9lXRZ9EXWSu8T15xbgUAawC1/2rBg=="
+                sparkle:edSignature="6zJ/Vce6V1S7TTe5ueINWbXtgiof2NletzoUEqxrVYCjufA8OI1LCwT14uNn5Rlsj/NQtUZZFHDWuYQUm/qdAg=="
             />
         </item>
         
