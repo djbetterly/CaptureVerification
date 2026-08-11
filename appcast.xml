@@ -8,7 +8,7 @@
 
         <item>
             <title>Version 3.8</title>
-            <sparkle:version>20260811</sparkle:version>
+            <sparkle:version>202608111627</sparkle:version>
             <sparkle:shortVersionString>3.8</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
@@ -16,12 +16,12 @@
 
 See commit history for details.
             ]]></description>
-            <pubDate>Tue, 11 Aug 2026 16:25:15 -0400</pubDate>
+            <pubDate>Tue, 11 Aug 2026 16:31:57 -0400</pubDate>
             <enclosure
                 url="https://github.com/djbetterly/CaptureVerification/releases/download/v3.8/Capture_Verification_Installer-v3.8.dmg"
-                length="4103592"
+                length="4101496"
                 type="application/octet-stream"
-                sparkle:edSignature="LuBXLpmVTJZOA0rhXtvxS34FmA21R7i+ZgE3co8C8BeD6DEwVzqJh3SufdzShPm4cWWne1FD2y9FW6XlQqa6CA=="
+                sparkle:edSignature="f32iTwGPgdGlf0ptnvDHkeWe8h5ILJcwuMMMija0vJtqGPltJpj11JOcmRbY/S2RDvLq0a3lR2O/uqnEt51IBg=="
             />
         </item>
 
