@@ -1,4 +1,4 @@
-<h2>Capture Verification 4.0</h2>
+<h2>Capture Verification 4.1</h2>
 
 <p><strong>You will be asked to register once when you first open this version.</strong>
 It takes a few seconds, it happens on this machine only, and it does not require a
@@ -51,4 +51,5 @@ on 1 January 2027 regardless of how you were using them. This version does not e
     only installing once and then never changing.</li>
 <li>Scheduled update checks are configured correctly.</li>
 <li>Fixed a crash that could occur if the archive folder could not be located.</li>
+<li>Further fixes to export verification and Capture One scripting.</li>
 </ul>
