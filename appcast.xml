@@ -7,9 +7,9 @@
         <language>en</language>
 
         <item>
-            <title>Version 4.1</title>
-            <sparkle:version>202609161058</sparkle:version>
-            <sparkle:shortVersionString>4.1</sparkle:shortVersionString>
+            <title>Version 4.2</title>
+            <sparkle:version>202609210900</sparkle:version>
+            <sparkle:shortVersionString>4.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
 <h2>Capture Verification 4.1</h2>
@@ -68,12 +68,12 @@ on 1 January 2027 regardless of how you were using them. This version does not e
 <li>Further fixes to export verification and Capture One scripting.</li>
 </ul>
             ]]></description>
-            <pubDate>Fri, 18 Sep 2026 14:13:33 -0400</pubDate>
+            <pubDate>Mon, 21 Sep 2026 08:42:19 -0400</pubDate>
             <enclosure
-                url="https://github.com/djbetterly/CaptureVerification/releases/download/v4.1/Capture_Verification_Installer-v4.1.dmg"
-                length="4209540"
+                url="https://github.com/djbetterly/CaptureVerification/releases/download/v4.2/Capture_Verification_Installer-v4.2.dmg"
+                length="4207196"
                 type="application/octet-stream"
-                sparkle:edSignature="gOoaxSMyXnHkuo4uwbWw0hChslvYwxylom/aw1Vac/9Xc65HzntuwaXYpMxLGid2rUbk6n44kftuwYdWPH3pCA=="
+                sparkle:edSignature="DHjJ0hXcuzljAQJ+M0mjSOsPtS6qOuCQDXA2zOfkEj61eDVkAJvmaUYqvqRbMC3r8P43XDc5i6Ef5WShjEf6Bg=="
             />
         </item>
 
