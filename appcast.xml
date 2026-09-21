@@ -12,60 +12,71 @@
             <sparkle:shortVersionString>4.2</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <description><![CDATA[
-<h2>Capture Verification 4.1</h2>
+<h2>Capture Verification 4.2</h2>
 
-<p><strong>You will be asked to register once when you first open this version.</strong>
-It takes a few seconds, it happens on this machine only, and it does not require a
-network connection. If you are on a closed set with no internet, fill the form in and
-carry on working normally &mdash; your details are sent later, automatically, the next
-time you are online.</p>
+<p><strong>Updating from 3.8?</strong> You will be asked to register once when you first
+open this version. It takes a few seconds, happens on this machine only, and does not need
+a network connection &mdash; on a closed set, fill the form in and carry on; your details are
+sent automatically the next time you are online. The trial expiry that 3.8 carried is gone.</p>
 
-<h3>Fixed: sessions reporting every single file as missing</h3>
+<h3>Fixed: variants not detected until Capture One rewrote its sidecars</h3>
 
-<p>Capture One began prepending an invisible character to the filenames it creates when
-processing, which nothing displays and nothing types. Verification compared filenames
-exactly, so a capture never matched its own processed output. A folder with 256 RAWs and
-256 matching JPEGs was reported as 256 files missing and 256 extra files &mdash; a full
-failure on a session where nothing was actually wrong.</p>
+<p>Capture One records a new variant in the session database immediately but rewrites the
+image's sidecar file only later &mdash; on an adjustment, on quit, or on its own schedule.
+Verification only read the sidecars, so a session where every image had just been cloned
+showed no variants at all. Variant counts now come from the session database, with the
+sidecars as a fallback, so a cloned-but-unprocessed variant is reported as unprocessed
+straight away.</p>
 
-<p>Filename comparison now ignores these invisible characters, along with differences in
-letter case and Unicode composition. On a real 4,376-file test session the false failures
-dropped to zero, and the twelve genuinely unprocessed captures that had been buried in the
-noise were correctly reported.</p>
+<h3>Fixed: shots rendered to two formats failed</h3>
 
-<h3>Fixed: verifications missing from History</h3>
+<p>A shot processed to a JPG recipe and a TIFF recipe &mdash; into one folder, or into
+separate JPG/ and TIFF/ recipe folders &mdash; was reported as duplicate renders and failed.
+Both layouts now pass and the folder row and the PDF show both counts, e.g.
+&ldquo;19 JPG &middot; 19 TIF&rdquo;, with the size of both included.</p>
 
-<p>A session was only added to History as a side effect of exporting a PDF report. If you
-ran a verification and did not export a report &mdash; or the export failed &mdash; the
-run was discarded. Verifications are now recorded the moment they finish, and exporting a
-report updates that same entry rather than creating a second one.</p>
+<h3>Changed: files found inside the Capture folder</h3>
 
-<h3>Fixed: Capture One variants were never detected</h3>
+<p>Processed files inside Capture (a RAW+JPEG tether, or a stray export) were moved to
+Trash/quarantine silently on every scan. You are now asked: leave them in place, in which
+case the report notes them and the session can still pass, or move them to quarantine,
+which is recorded as a failure.</p>
 
-<p>Variant detection was broken by the same invisible-character problem, so confirmed
-variants were being counted as unexpected extra files instead. Variants are now matched
-and reported correctly.</p>
-
-<h3>Fixed: unreadable characters in shoot reports</h3>
-
-<p>Filenames printed into PDF shoot reports and shown in the results list carried those
-same invisible characters through to the page. Names are now cleaned for display. The real
-filename on disk is untouched, so Show in Finder, Quarantine and Rename all continue to act
-on the correct file.</p>
-
-<h3>Changed: no more trial period</h3>
-
-<p>The trial and its expiration date are gone. Previous versions would have stopped working
-on 1 January 2027 regardless of how you were using them. This version does not expire.</p>
-
-<h3>Also in this release</h3>
+<h3>Backup verification</h3>
 
 <ul>
-<li>The bundled Capture One script now updates itself when a new version ships, instead of
-    only installing once and then never changing.</li>
-<li>Scheduled update checks are configured correctly.</li>
-<li>Fixed a crash that could occur if the archive folder could not be located.</li>
-<li>Further fixes to export verification and Capture One scripting.</li>
+<li>A backup copy that is a different size from the master is a mismatch, not a match.</li>
+<li>A drive that cannot be read, or has no Capture folder, says so instead of showing 0%.</li>
+<li>RAW files directly in the Capture folder are compared, not only those in subfolders.</li>
+<li>Re-Verify keeps the drive results on screen and in the PDF.</li>
+<li>Two backups on the same volume are told apart by the folder that holds them.</li>
+</ul>
+
+<h3>Matching</h3>
+
+<ul>
+<li>Output folders named with a different separator or Capture One's counter suffix
+    (Shot_01 for Shot-01, SHOT01_02 for SHOT01) are matched.</li>
+<li>More RAW formats are recognised: IIQ, 3FR, FFF, MOS, MEF, NRW, RWL, CRW, ERF, SR2.</li>
+<li>Additional output formats (WebP, AVIF, &hellip;) can be added under Settings &rarr; Advanced.</li>
+<li>RAW files directly in the Capture folder are verified as &ldquo;(Capture Root)&rdquo;.</li>
+<li>An empty capture folder is listed as empty, not failed.</li>
+<li>A Capture folder with no captures, or a session without an Output folder, shows a clear
+    message instead of the previous session's results.</li>
+</ul>
+
+<h3>Results and reports</h3>
+
+<ul>
+<li>Files marked intentional survive Done and Re-Verify; the verdict updates to PASS.</li>
+<li>The PDF lists intentionally excluded files, files moved to quarantine, and files left
+    in place inside Capture; dismissed naming warnings are left out; the camera and lens
+    toggles in Settings now actually remove those sections.</li>
+<li>Naming warnings no longer flag a copy or duplicate a second time as a pattern break.</li>
+<li>Scanning runs in the background, so the window stays responsive on large sessions.</li>
+<li>Settings and the Verification Options sheet fit smaller windows; the options sheet has
+    a Cancel button; folder exclusions and backup drives no longer carry over to the next
+    session.</li>
 </ul>
             ]]></description>
             <pubDate>Mon, 21 Sep 2026 08:42:19 -0400</pubDate>
