@@ -87,6 +87,20 @@ else
 fi
 NOTES_CONTENT=$(cat "$RELEASE_NOTES_FILE")
 
+# The notes must be for THIS version. RELEASE_NOTES.md is easy to leave untouched from the
+# previous release, and the script used to ship it silently: 4.2 and 4.2.1 both went out
+# with 4.1's text in the Sparkle dialog and on the GitHub release page. Refuse unless the
+# notes mention the version being released (set FORCE_NOTES=1 to override, knowingly).
+if ! grep -q -F "$VERSION" "$RELEASE_NOTES_FILE"; then
+    if [ "${FORCE_NOTES:-0}" != "1" ]; then
+        echo "❌ Release notes in $RELEASE_NOTES_FILE do not mention version $VERSION."
+        echo "   First line: $(head -n 1 "$RELEASE_NOTES_FILE")"
+        echo "   Update RELEASE_NOTES.md for $VERSION (or pass a notes file), or set FORCE_NOTES=1 to ship them anyway."
+        exit 1
+    fi
+    echo "⚠️  FORCE_NOTES=1: shipping notes that do not mention $VERSION."
+fi
+
 # --- FIND THE APP ---
 echo ""
 echo "📦 Step 1: Finding the app..."

@@ -1,55 +1,29 @@
-<h2>Capture Verification 4.1</h2>
+<h2>Capture Verification 4.2.1</h2>
 
-<p><strong>You will be asked to register once when you first open this version.</strong>
-It takes a few seconds, it happens on this machine only, and it does not require a
-network connection. If you are on a closed set with no internet, fill the form in and
-carry on working normally &mdash; your details are sent later, automatically, the next
-time you are online.</p>
+<h3>Fixed: sessions with non-standard folder names</h3>
 
-<h3>Fixed: sessions reporting every single file as missing</h3>
+<p>A session whose captures and processed files live in folders not called Capture and
+Output (for example <code>01_Raw_Files</code> and <code>03_Client_Previews</code>) could
+stop with &ldquo;Could not find both 'Capture' and 'Output' folders&rdquo;. The app now reads
+the session's own folder assignments from the Capture One session database, so any layout
+the session is configured with is recognised.</p>
 
-<p>Capture One began prepending an invisible character to the filenames it creates when
-processing, which nothing displays and nothing types. Verification compared filenames
-exactly, so a capture never matched its own processed output. A folder with 256 RAWs and
-256 matching JPEGs was reported as 256 files missing and 256 extra files &mdash; a full
-failure on a session where nothing was actually wrong.</p>
+<h3>New: choose the folders yourself</h3>
 
-<p>Filename comparison now ignores these invisible characters, along with differences in
-letter case and Unicode composition. On a real 4,376-file test session the false failures
-dropped to zero, and the twelve genuinely unprocessed captures that had been buried in the
-noise were correctly reported.</p>
+<p>When the folders still cannot be worked out &mdash; no session database, unusual names
+and nothing processed yet &mdash; you are asked to pick the Capture folder and the Output
+folder. The choice is remembered for that session, so Re-Verify and History do not ask
+again. If you cancel, the welcome screen offers &ldquo;Choose Folders&hellip;&rdquo; to come
+back to it.</p>
 
-<h3>Fixed: verifications missing from History</h3>
+<h3>Since 4.2</h3>
 
-<p>A session was only added to History as a side effect of exporting a PDF report. If you
-ran a verification and did not export a report &mdash; or the export failed &mdash; the
-run was discarded. Verifications are now recorded the moment they finish, and exporting a
-report updates that same entry rather than creating a second one.</p>
+<p>Variants are detected as soon as they are created in Capture One (read from the session
+database instead of waiting for the sidecar files); JPG and TIFF recipes for the same shot
+pass and are both counted; files found inside the Capture folder are no longer moved without
+asking; backup copies of the wrong size are reported; and the report lists every decision
+you made while resolving a session.</p>
 
-<h3>Fixed: Capture One variants were never detected</h3>
-
-<p>Variant detection was broken by the same invisible-character problem, so confirmed
-variants were being counted as unexpected extra files instead. Variants are now matched
-and reported correctly.</p>
-
-<h3>Fixed: unreadable characters in shoot reports</h3>
-
-<p>Filenames printed into PDF shoot reports and shown in the results list carried those
-same invisible characters through to the page. Names are now cleaned for display. The real
-filename on disk is untouched, so Show in Finder, Quarantine and Rename all continue to act
-on the correct file.</p>
-
-<h3>Changed: no more trial period</h3>
-
-<p>The trial and its expiration date are gone. Previous versions would have stopped working
-on 1 January 2027 regardless of how you were using them. This version does not expire.</p>
-
-<h3>Also in this release</h3>
-
-<ul>
-<li>The bundled Capture One script now updates itself when a new version ships, instead of
-    only installing once and then never changing.</li>
-<li>Scheduled update checks are configured correctly.</li>
-<li>Fixed a crash that could occur if the archive folder could not be located.</li>
-<li>Further fixes to export verification and Capture One scripting.</li>
-</ul>
+<p><strong>Updating from 3.8?</strong> You will be asked to register once on first launch.
+It works offline &mdash; fill the form in and carry on; the details are sent the next time
+you are online. The trial expiry that 3.8 carried is gone.</p>
