@@ -4,6 +4,9 @@
 # Capture Verification Release Script
 #
 # Usage: ./build_release.sh <version> [release_notes_file]
+#
+# Before running: write notes/v<version>.html (HTML; first line <h2>Capture Verification <version></h2>)
+# and set the same version in Xcode. The script stops if either is missing or does not match.
 # Example: ./build_release.sh 2.0
 #          ./build_release.sh 2.0 notes.md
 #
@@ -75,15 +78,22 @@ echo "================================================"
 
 # --- RESOLVE RELEASE NOTES ---
 # Priority: explicit file arg  >  RELEASE_NOTES.md next to the script  >  generated stub
+# Notes are written per release into notes/v<version>.html — one file per version, so a
+# previous release's text can never be picked up by mistake. RELEASE_NOTES.md next to the
+# script is still accepted as a working copy and is moved into notes/ once the release is
+# out. There is no generated stub: a release without notes is a mistake, not a default.
+NOTES_DIR="${SCRIPT_DIR}/notes"
 if [ -n "$NOTES_ARG" ] && [ -f "$NOTES_ARG" ]; then
     RELEASE_NOTES_FILE="$NOTES_ARG"
+elif [ -f "${NOTES_DIR}/v${VERSION}.html" ]; then
+    RELEASE_NOTES_FILE="${NOTES_DIR}/v${VERSION}.html"
 elif [ -f "${SCRIPT_DIR}/RELEASE_NOTES.md" ]; then
     RELEASE_NOTES_FILE="${SCRIPT_DIR}/RELEASE_NOTES.md"
 else
-    RELEASE_NOTES_FILE="$(mktemp)"
-    printf "## Capture Verification v%s\n\nSee commit history for details.\n" "$VERSION" > "$RELEASE_NOTES_FILE"
-    echo "ℹ️  No release notes provided — using a generated stub."
-    echo "   (Pass a file:  ./build_release.sh ${VERSION} notes.md, or drop a RELEASE_NOTES.md next to this script.)"
+    echo "❌ No release notes for ${VERSION}."
+    echo "   Write them to ${NOTES_DIR}/v${VERSION}.html (HTML, first line <h2>Capture Verification ${VERSION}</h2>),"
+    echo "   or to RELEASE_NOTES.md next to this script, or pass a file as the second argument."
+    exit 1
 fi
 NOTES_CONTENT=$(cat "$RELEASE_NOTES_FILE")
 
@@ -147,10 +157,14 @@ echo "   📦 Marketing version (CFBundleShortVersionString): $MARKETING_VERSION
 echo "   🔢 Build version     (CFBundleVersion):            $BUNDLE_VERSION"
 echo "   🏷️  Release version   (argument):                   $VERSION"
 
-if [ "$BUNDLE_VERSION" != "$VERSION" ]; then
+# The app being shipped must be the version being released. The old check compared the
+# timestamp build number against the version and warned on every run; this one compares
+# the marketing version and stops, because shipping "4.2.1" built as 4.2 is not a release.
+if [ "$MARKETING_VERSION" != "$VERSION" ]; then
     echo ""
-    echo "   ⚠️  Note: Bundle version ($BUNDLE_VERSION) differs from release version ($VERSION)"
-    echo "      The appcast will use $VERSION — consider updating Xcode to match."
+    echo "❌ The app at $APP_PATH is version $MARKETING_VERSION, but you are releasing $VERSION."
+    echo "   Set MARKETING_VERSION in Xcode to $VERSION, rebuild/export, and run again."
+    exit 1
 fi
 
 # --- STAPLE NOTARIZATION ---
@@ -306,11 +320,21 @@ echo "📤 Step 7: Committing & pushing appcast.xml..."
 
 (
     cd "$REPO_DIR"
-    git add appcast.xml
+    # Keep the notes that shipped, under their version, and retire the working copy so it
+    # cannot be reused by the next release.
+    mkdir -p "$NOTES_DIR"
+    if [ "$RELEASE_NOTES_FILE" != "${NOTES_DIR}/v${VERSION}.html" ]; then
+        cp "$RELEASE_NOTES_FILE" "${NOTES_DIR}/v${VERSION}.html"
+    fi
+    if [ -f "${SCRIPT_DIR}/RELEASE_NOTES.md" ]; then
+        git rm -q --cached RELEASE_NOTES.md 2>/dev/null || true
+        rm -f RELEASE_NOTES.md
+    fi
+    git add appcast.xml notes/
     if git diff --cached --quiet; then
         echo "   ℹ️  appcast.xml unchanged — nothing to commit."
     else
-        git commit -m "Update appcast for v${VERSION}"
+        git commit -m "Release v${VERSION}: appcast and notes"
         git push
         echo "   ✅ appcast.xml pushed — clients will now see v${VERSION}."
     fi
